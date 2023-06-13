@@ -1,0 +1,8 @@
+.ResponsiveMenu{
+    background-color: #F7FAFD;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    height: max-content;
+}
