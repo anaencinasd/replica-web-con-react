@@ -1,5 +1,6 @@
-import {Button} from "@mui/material"
-import "./button0.css"
+import {Button} from "@mui/material";
+import PropTypes from 'prop-types'
+import "./button0.css";
 
 function Button0 ({button_content}) {
     return(
@@ -10,6 +11,11 @@ function Button0 ({button_content}) {
         </>
     )
 }
+
+Button0.propTypes = {
+    button_content: PropTypes.string.isRequired,
+  };
+  
 
 
 

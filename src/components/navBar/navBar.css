@@ -1,8 +1,57 @@
-.ResponsiveMenu{
+a{
+    color:#333333;
+    background-color: blue;
+}
+
+.burguerIcon{
+    display: none;
+    
+}
+
+.logo{
+    width: 10rem;
+    height: auto;
+}
+
+.ResponsiveNavBar{
     background-color: #F7FAFD;
-    width: max-content;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 3%;
     height: max-content;
 }
+
+.menuItem{
+    display: block;
+    size: large;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+   
+
+    
+ 
+}
+
+
+
+.responsive {
+    display: none;
+}
+
+@media (min-width:600px){
+
+    .responsive{
+        display:flex;
+    }
+
+    .burguerIcon{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

@@ -1,9 +1,29 @@
 
-import { Drawer, Button } from '@mui/material'
-import './navBar.css'
-import NavListDrawer from './NavBarDrawer'
-import {useState} from "react"
+import { Drawer, Button, AppBar, Toolbar, IconButton, ListItemIcon, Box } from '@mui/material'
+import NavListDrawer from './NavBarDrawer';
+import {useState} from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import "./navBar.css"
+import Button0 from '../atoms/Button0';
+import Logo from "../images/logo.svg";
 
+
+
+const navLinks = [
+    {
+        title: "DESCRIPTION", path: "#"
+    },
+    {
+        title: "FEATURES", path: "#features"
+    },
+    {
+        title: "SCREENS", path: "#screens"
+    },
+    {
+        title: "EXTRA", path: "#extra", icon: <ArrowDropDownIcon />
+    },
+]
 
 
 
@@ -12,19 +32,43 @@ const [open, setOpen] = useState(false);
    
 return (
     <>
-    <Button 
-    variant="contained"
-    onClick={()=> setOpen(true)}
-    >
-        HOLA
-    </Button>
+        <AppBar position='fixed' color='inherit'>
+            <Toolbar className='ResponsiveNavBar'>
+                <img src={Logo} alt="logo" className="logo"/>
+                <IconButton className='burguerIcon'
+                onClick={()=> setOpen(true)}>
+                  <MenuIcon />
+                  <image src="../assets/images/logo.svg"></image>
+                </IconButton> 
+                <Box className="responsive">
+                {navLinks.map(item => (
+                        <Button className="menuItem" key={item.title} component="a" href={item.path}>{item.title}
+                            <ListItemIcon>
+                                    {item.icon}   
+                            </ListItemIcon>
+                        </Button>
+                    
+                    ))
+                }
+                
+                
+                <Button0 button_content='DOWNLOAD'></Button0>
+                </Box>
+            </Toolbar>
+        </AppBar>
+
+
+
+
+
+    
 
     <Drawer
         open={open}
         anchor="right"
         onClose={() => setOpen(false)}
         >
-            <NavListDrawer />
+            <NavListDrawer navLinks={navLinks}/>
 
     </Drawer>
     </>

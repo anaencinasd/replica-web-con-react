@@ -1,31 +1,29 @@
 import {Box} from "@mui/system";
-import {List, ListItemButton, ListItemIcon, ListItemText} from "@mui/material"
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import {List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material"
 import Button0 from "../atoms/Button0";
 import './navBar.css';
 
-function NavListDrawer () {
+
+function NavListDrawer ({navLinks}) {
     return(
         <>
         <Box className= "ResponsiveMenu">
             <nav>
-                <List disablePadding>
-                        <ListItemButton>
-                            <ListItemText primary="DESCRIPTION"/>
-                        </ListItemButton>
-                        <ListItemButton>
-                            <ListItemText primary="FEATURES"/>
-                        </ListItemButton>
-                        <ListItemButton>
-                         <ListItemText primary="SCREENS"/>
-                        </ListItemButton>
-                        <ListItemButton>
-                            <ListItemText primary="EXTRA"/> 
-                            <ListItemIcon>
-                            <ArrowDropDownIcon/>
-                            </ListItemIcon>                    
-                        </ListItemButton>
-                        <Button0 button_content={"DOWNLOAD"}></Button0>
+                <List>
+                    {
+                        navLinks.map(item => (
+                            <ListItem disablePadding key={item.title}>
+                                
+                            <ListItemButton component="a" href={item.path}>
+                                <ListItemText>{item.title}</ListItemText>
+                                <ListItemIcon>
+                                    {item.icon}   
+                                </ListItemIcon>
+                            </ListItemButton>
+                        </ListItem>
+                        ))
+                    }
+                    <Button0 button_content={"DOWNLOAD"}></Button0>
                         
                     
                 </List>
