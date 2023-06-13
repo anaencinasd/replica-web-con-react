@@ -7,7 +7,7 @@ import './navBar.css';
 function NavListDrawer ({navLinks}) {
     return(
         <>
-        <Box className= "ResponsiveMenu">
+        <Box>
             <nav>
                 <List>
                     {

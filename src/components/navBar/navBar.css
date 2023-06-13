@@ -1,6 +1,5 @@
 a{
     color:#333333;
-    background-color: blue;
 }
 
 .burguerIcon{
@@ -41,6 +40,8 @@ a{
 
 .responsive {
     display: none;
+    color: #333333;
+    
 }
 
 @media (min-width:600px){

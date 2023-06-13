@@ -11,8 +11,9 @@ import Logo from "../images/logo.svg";
 
 
 const navLinks = [
+   
     {
-        title: "DESCRIPTION", path: "#"
+        title: "DESCRIPTION", path: "#description"
     },
     {
         title: "FEATURES", path: "#features"
@@ -32,27 +33,27 @@ const [open, setOpen] = useState(false);
    
 return (
     <>
-        <AppBar position='fixed' color='inherit'>
+        <AppBar position='fixed'>
             <Toolbar className='ResponsiveNavBar'>
+                <a href="/home">
                 <img src={Logo} alt="logo" className="logo"/>
+                </a>
                 <IconButton className='burguerIcon'
                 onClick={()=> setOpen(true)}>
                   <MenuIcon />
                   <image src="../assets/images/logo.svg"></image>
                 </IconButton> 
                 <Box className="responsive">
-                {navLinks.map(item => (
+                    {navLinks.map(item => (
                         <Button className="menuItem" key={item.title} component="a" href={item.path}>{item.title}
                             <ListItemIcon>
                                     {item.icon}   
                             </ListItemIcon>
                         </Button>
                     
-                    ))
-                }
-                
-                
-                <Button0 button_content='DOWNLOAD'></Button0>
+                        ))
+                    }
+                    <Button0 button_content='DOWNLOAD'></Button0>
                 </Box>
             </Toolbar>
         </AppBar>
