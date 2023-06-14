@@ -1,7 +1,7 @@
 import {Box} from "@mui/system";
 import {List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material"
 import Button0 from "../atoms/Button0";
-import './navBar.css';
+//import './navBar.css';
 
 
 function NavListDrawer ({navLinks}) {

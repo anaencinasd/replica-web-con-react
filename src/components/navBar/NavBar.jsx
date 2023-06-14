@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./navBar.css"
 import Button0 from '../atoms/Button0';
-import Logo from "../images/logo.svg";
+import Logo from "../../assets/images/logo.svg";
 
 
 
@@ -39,11 +39,12 @@ return (
                 <img src={Logo} alt="logo" className="logo"/>
                 </a>
                 <IconButton className='burguerIcon'
-                onClick={()=> setOpen(true)}>
+                onClick={()=> setOpen(true)}
+                sx={{display: {xs: "block", sm: "none"}}}>
                   <MenuIcon />
                   <image src="../assets/images/logo.svg"></image>
                 </IconButton> 
-                <Box className="responsive">
+                <Box sx={{ display:{xs: "none", sm: "block"}}}>
                     {navLinks.map(item => (
                         <Button className="menuItem" key={item.title} component="a" href={item.path}>{item.title}
                             <ListItemIcon>
