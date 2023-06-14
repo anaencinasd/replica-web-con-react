@@ -46,7 +46,15 @@ return (
                 </IconButton> 
                 <Box sx={{ display:{xs: "none", sm: "block"}}}>
                     {navLinks.map(item => (
-                        <Button className="menuItem" key={item.title} component="a" href={item.path}>{item.title}
+                        <Button key={item.title} component="a" href={item.path}
+                        style={{
+                            color: "#333333",
+                            fontSize: "1.2rem",
+                            fontWeight: "700"
+
+                        }}
+                        >
+                            {item.title}
                             <ListItemIcon>
                                     {item.icon}   
                             </ListItemIcon>

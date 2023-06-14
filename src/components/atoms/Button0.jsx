@@ -10,12 +10,13 @@ function Button0 ({button_content}) {
         
         backgroundColor:"transparent",
         border: "2px solid",
+        fontSize: "1.5rem",
         color: "#FF556E",
         borderColor: "#FF556E",
         borderRadius: "35px",
         fontWeight: "700",
         paddingLeft: "3rem",
-        paddingRight: "3rem"
+        paddingRight: "3rem",
 
        }}>
             {button_content}

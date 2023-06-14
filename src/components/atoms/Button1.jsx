@@ -11,12 +11,13 @@ function Button1 ({button_content}){
     <>
       <Button variant="contained" className= "button1" startIcon={<AppleIcon/>}
       style={{
-        backgroundColor:"#FF556E",
-        borderColor: "#FF556E",
+        backgroundColor: "#FF556E",
+        color: "white",
         borderRadius: "35px",
-        fontWeight: "700",
+        fontSize: "1.5rem",
         paddingLeft: "3rem",
-        paddingRight: "3rem"
+        paddingRight: "3rem",
+
       }}
       >
         {button_content}
