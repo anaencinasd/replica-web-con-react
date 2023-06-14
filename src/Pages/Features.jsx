@@ -1,8 +1,9 @@
+import NavBar from "../components/navBar/NavBar"
 
 function Features (){
     return(
         <>
-        <h1>hola</h1>
+        <NavBar />
        
         </>
     )

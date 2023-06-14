@@ -16,7 +16,7 @@ const navLinks = [
         title: "DESCRIPTION", path: "#description"
     },
     {
-        title: "FEATURES", path: "#features"
+        title: "FEATURES", path: "/features"
     },
     {
         title: "SCREENS", path: "#screens"
