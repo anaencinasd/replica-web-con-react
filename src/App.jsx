@@ -1,19 +1,19 @@
-
-import './App.css'
-import RouterItem from './configuration/Router'
-
+import "./App.css";
+import NavBar from "./components/navBar/NavBar";
+import RouterItem from "./configuration/Router";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-    <div>
-      <RouterItem>
-
-      </RouterItem>
-    </div>
+      
+        <NavBar />
+        <RouterItem></RouterItem>
+        <Footer />
       
     </>
-  )
+  );
 }
 
-export default App
+
+export default App;

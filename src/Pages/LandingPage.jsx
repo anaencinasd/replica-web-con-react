@@ -1,26 +1,11 @@
-import LandingMain from "../components/main/LandingMain"
-import NavBar from "../components/navBar/NavBar"
+import LandingMain from "../components/main/LandingMain";
 
-
-
-
-
-
-
-
-function LandingPage(){
-    return(
-        <>
-        <NavBar />
-        <LandingMain />
-
-      
-      
-       
-        
-        </>
-    )
-
+function LandingPage() {
+  return (
+    <>
+      <LandingMain />
+    </>
+  );
 }
 
-export default LandingPage
+export default LandingPage;

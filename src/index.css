@@ -1,18 +1,9 @@
-:root {
-  font-family: 'OpenSans', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 62.5%;
-
-  color-scheme: light dark;
-  
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
 
 
 
@@ -24,26 +15,11 @@ body {
   min-width: 320px;
   margin-top: 20rem;
   background-color: #F7FAFD;
-}
+} 
 
-h1{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700px;
-  font-size: 3.5rem;
-  color:#333333;
-}
 
-p{
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 2rem;
-  color:#777;
 
-}
+
  
 
 

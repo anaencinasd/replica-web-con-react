@@ -1,0 +1,8 @@
+.footer{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #c8d4d6;
+    background-color: f7fafd;
+    width: 100%;
+    flex-wrap: wrap;
+}
