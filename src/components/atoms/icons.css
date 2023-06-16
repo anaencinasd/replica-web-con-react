@@ -1,15 +1,17 @@
 .circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: spin 1s linear infinite;
+    
   }
   
   .circle-purple {
     background-color: #ebe7fa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
   }
   
   .circle-green {

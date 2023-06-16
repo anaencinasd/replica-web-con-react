@@ -18,7 +18,7 @@ import AtomButton from "../atoms/AtomButton";
 const navLinks = [
   {
     title: "DESCRIPTION",
-    path: "#description",
+    path: "/description",
   },
   {
     title: "FEATURES",
@@ -26,11 +26,11 @@ const navLinks = [
   },
   {
     title: "SCREENS",
-    path: "#screens",
+    path: "/screens",
   },
   {
     title: "EXTRA",
-    path: "#extra",
+    path: "/extra",
     icon: <ArrowDropDownIcon />,
   },
 ];
