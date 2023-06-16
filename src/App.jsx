@@ -9,7 +9,7 @@ function App() {
       
         <NavBar />
         <RouterItem></RouterItem>
-        <Footer />
+        <Footer /> 
       
     </>
   );

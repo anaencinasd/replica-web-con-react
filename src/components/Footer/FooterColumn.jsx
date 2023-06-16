@@ -1,12 +1,16 @@
+import "./footer.css";
+import PropTypes from 'prop-types'
 
-
-export default function Footer() {
+export default function FooterColumn(props) {
   return (
-    <div>
-      <h4>Contact Info</h4>
-      <ul>
-
-      </ul>
+    <div className="footerColumns">
+      <h4>{props.title}</h4>
+      <ul>{props.children}</ul>
     </div>
   );
+}
+
+FooterColumn.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.string,
 }

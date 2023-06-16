@@ -16,12 +16,22 @@
 
 }
 
+.buttonContained:hover{
+    background-color: transparent !important;
+    color:#FF556E !important;
+    
+}
+
 .buttonOutlined{
     background-color: transparent !important;
     color: #FF556E !important;
     border-color: #FF556E !important;
     border: 2px solid !important;
     font-weight: 700 !important;
-    
-   
 }
+
+.buttonOutlined:hover{
+    background-color: #FF556E !important;
+    color: aliceblue !important;
+}
+

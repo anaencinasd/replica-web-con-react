@@ -6,7 +6,7 @@ const RouterItem = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path='/home' element={<LandingPage/>}></Route>
+                <Route path='/' element={<LandingPage/>}></Route>
                 <Route path="/features" element={<Features/>}></Route>
             </Routes>
         </BrowserRouter>

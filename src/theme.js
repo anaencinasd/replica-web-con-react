@@ -9,6 +9,10 @@ const theme = createTheme({
         contrastText: #ff556e,
     }
 
+    footer: {
+        main: #999999
+    }
+
 })
 
 export default theme

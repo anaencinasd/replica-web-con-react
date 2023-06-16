@@ -42,7 +42,7 @@ const NavBar = () => {
     <>
       <AppBar position="fixed">
         <Toolbar className="ResponsiveNavBar">
-          <a href="/home">
+          <a href="/">
             <img src={Logo} alt="logo" className="logo" />
           </a>
           <IconButton

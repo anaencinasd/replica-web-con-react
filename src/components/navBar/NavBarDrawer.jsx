@@ -1,6 +1,6 @@
 import {Box} from "@mui/system";
 import {List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material"
-import Button0 from "../atoms/Button0";
+import AtomButton from "../atoms/AtomButton";
 import './navBar.css';
 
 
@@ -24,7 +24,7 @@ function NavListDrawer ({navLinks}) {
                         </ListItem>
                         ))
                     }
-                    <Button0 button_content={"DOWNLOAD"}></Button0>
+                    <AtomButton variant="Outlined" className="buttonOutlined" button_content="DOWNLOAD"/>
                         
                     
                 </List>

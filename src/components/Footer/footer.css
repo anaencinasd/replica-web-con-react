@@ -1,8 +1,45 @@
 .footer{
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-top: 1px solid #c8d4d6;
     background-color: f7fafd;
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+.footerContainer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+
+.footerColumns{
+    width: 15rem;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #777;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.footerColumns ul {
+    list-style: none;
+}
+
+.rrssIcons{
+    width: auto;
+    cursor: pointer;
+}
+
+
