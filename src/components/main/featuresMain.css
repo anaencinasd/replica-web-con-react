@@ -1,0 +1,16 @@
+.mainContainer{
+    background-color: #F7FAFD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circlesContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}

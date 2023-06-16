@@ -1,0 +1,43 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+  }
+  
+  .circle-purple {
+    background-color: #ebe7fa;
+  }
+  
+  .circle-green {
+    background-color: #daf4ef;
+  }
+  
+  .circle-red {
+    background-color: #f8e5ea;
+  }
+  
+  .circle-yellow {
+    background-color: #f8f1de;
+  }
+  
+  .circle-blue {
+    background-color: #e1f2fa;
+  }
+  
+  .circle:hover {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
