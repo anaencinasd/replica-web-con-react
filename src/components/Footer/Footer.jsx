@@ -24,11 +24,12 @@ export default function Footer() {
           <li>Advanced Timer</li>
           <li>Music Store</li>
         </FooterColumn>
-        <div className="rrssIcons"></div>
-        <FacebookRoundedIcon />
-        <TwitterIcon />
-        <PinterestIcon />
-        <InstagramIcon />
+        <div className="rrssIcons">
+        <FacebookRoundedIcon style={{fill:"#999"}}/>
+        <TwitterIcon style={{fill:"#999"}}/>
+        <PinterestIcon style={{fill:"#999"}}/>
+        <InstagramIcon style={{fill:"#999"}}/>
+        </div>
       </div>
     </div>
   );
